@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Random Anime Quotes",
+        "img": "https://i.ibb.co/GcBpnTr/randomanimequote2.png",
+        "imgAlt": "App Screenshot",
+        "description" : "This is a random anime quote generator that uses the animechan API to generate the qoute.",
+        "url" : "https://random-animequotes.netlify.app/",
+        "githubUrl" : "https://github.com/jaymfune/random-anime-quotes",
+        "techstack" : ["HTML", "CSS", "JS", "JSON"]
+    }
+]

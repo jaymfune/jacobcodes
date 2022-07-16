@@ -1,0 +1,37 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3{
+	margin: 0 0 rem(32);
+	line-height: 1.1;
+	font-family: var(--ff-inter);
+	font-weight: var(--fw-700);
+	color: var(--headline);
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: clamp(1.8rem, 2.5vw + 1rem, 4rem);
+}
+
+h2 {
+	font-size: clamp(1.8rem, 2.5vw + 1rem, 3rem);
+}
+
+h3 {
+	font-size: clamp(1.5rem, 2.5vw + 1rem, 2rem);
+}
+
+p {
+	font-size: clamp(1rem, calc(1rem + 0.540vw), 1.75rem);
+	font-family: var(--ff-poppins);
+	line-height: 1.2;
+	color: var(--text);
+	margin-top: 0;
+}

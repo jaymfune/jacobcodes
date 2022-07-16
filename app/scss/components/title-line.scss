@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+.title-line {
+    position: relative;
+    display: inline-block;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: var(--light-blue);
+        -webkit-box-shadow: 0 0 8px var(--light-blue);
+        box-shadow: 0 0 8px var(--light-blue);
+        height: rem(10);
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        @include breakpoint(medium){
+            height: rem(16);
+        }
+    }
+}

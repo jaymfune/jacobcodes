@@ -1,0 +1,52 @@
+@use '../util' as *;
+
+.contact {
+    padding-top: rem(32);
+    padding-bottom: rem(42);
+    background-color: var(--light-blue-500);
+    @include breakpoint(medium){
+        padding-top: rem(64);
+        padding-bottom: rem(80); 
+    }
+    svg {
+        height: 1.8em;
+        width: 1.8em;
+        fill: var(--headline);
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+    }
+
+    p {
+        margin-bottom: rem(48);
+        @include breakpoint(medium){
+            margin-bottom: rem(60);
+        }
+    }
+
+    a {
+        &:hover {
+            svg {
+                fill: var(--red);
+                transform: scale(1.2);
+                transition: all 0.2s ease-in-out;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+            }
+        }
+    }
+    
+    &__social-icons {
+        display: flex;
+        gap: rem(16);
+    }
+}
+

@@ -1,0 +1,32 @@
+@use '../util' as *;
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background: var(--white);
+}
+
+body, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	&::marker {
+		content: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}

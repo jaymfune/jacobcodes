@@ -1,0 +1,23 @@
+@use '../util' as *;
+
+.fixed {
+	@include breakpoint(medium){
+		position: fixed;
+		// top: 0;
+		width: 100%;
+		background-color: var(--light-blue);
+		transition: all 0.45s;
+		-webkit-transition: all 0.45s;
+		-moz-transition: all 0.45s;
+		-ms-transition: all 0.45s;
+		-o-transition: all 0.45s;
+		z-index: 10;
+		animation: slideIn 0.55s ease-in-out 0.10s;
+		box-shadow: 0px 0px 10px 0px var(--shadow-color);
+		.navbar__wrapper {
+			transition: all 0.45s;
+			padding-bottom: rem(16);
+			padding-top: rem(16);
+		}
+	}
+}

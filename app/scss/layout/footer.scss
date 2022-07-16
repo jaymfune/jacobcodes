@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+.footer {
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+    text-align: center;
+    background-color: var(--headline);
+    p {
+        margin-bottom: 0;
+        color: var(--white);
+    }
+}
+

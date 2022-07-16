@@ -1,0 +1,109 @@
+@use '../util' as *;
+
+.navbar {
+    &__wrapper {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: rem(32);
+        padding-bottom: rem(32);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 0.45s;
+        background-color: var(--light-blue);
+        @include breakpoint-down(small) {
+           visibility: hidden;
+        }
+        @include breakpoint(medium) {
+            flex-direction: initial;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            transform: translateY(0);
+            background-color: initial;
+        }
+        &.open {
+            transform: translateY(0);
+            transition: all 0.45s;
+            @include breakpoint-down(small) {
+                visibility: visible;
+            }
+        }
+    }
+    a {
+        position: relative;
+        display: inline-block;
+    }
+
+    ul {
+        display: flex;
+        gap: rem(25);
+        li {
+            position: relative;
+        }
+    }
+    .plus-btn-pos {
+        @include breakpoint(medium){
+            display: none;
+        }
+    }
+    &__brand {
+        font-family: var(--ff-cabin);
+        font-size: rem(30);
+        letter-spacing: rem(5);
+        font-weight: 700;
+        font-style: italic;
+        color: var(--headline);
+        transition: all 0.2s ease-in-out;
+        &:hover, &:focus{
+            color: var(--red);
+            transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+        } 
+    }
+
+    &__links {
+        flex-direction: column;
+        gap: rem(20);
+        transition: all 0.2s ease-in-out;
+        a {
+            font-family: var(--ff-cabin);
+            font-size: rem(20);
+            font-weight: 700;
+            color: var(--headline);
+            position: relative;         
+            transition: all 0.2s ease-in-out;
+            display: inline-block;
+            &:hover{
+                color: var(--red);
+                transform: scale(1.15);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+        @include breakpoint(medium) {
+            flex-direction: initial;
+            gap: rem(2);
+        }
+    }
+
+    &__social-links {
+        svg {
+            fill: var(--headline);
+            transition: all 0.2s ease-in-out;
+            height: 1.8em;
+            width: 1.8em;
+            &:hover{
+                fill: var(--red);
+                transform: scale(1.2);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }    
+}

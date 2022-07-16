@@ -1,0 +1,11 @@
+@use '../util' as *;
+
+.projects {
+    padding: rem(16) 0;
+    @include breakpoint(medium){
+        padding: rem(48) 0;
+    }
+    h2 {
+        color: var(--headline);
+    }
+}

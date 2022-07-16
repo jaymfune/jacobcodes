@@ -1,0 +1,82 @@
+@use '../util' as *;
+
+.plus-btn-pos {
+    display: flex;
+    justify-content: flex-end;
+    padding: rem(16);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    @include breakpoint(medium) {
+        display: none;
+        position: relative; 
+    }
+}
+
+.plus-btn {
+    width: rem(38);
+    height: rem(38);
+    border-radius: 100%;
+    position: relative;
+    background: var(--blue);
+    box-shadow: 0 2px 5px 0 var(--shadow-color), 0 2px 10px 0 var(--shadow-color);
+    z-index: 2;
+    &.active {
+        background: var(--red);
+        .r1, .r2 {
+            background: var(--white);
+        }
+    
+        .r1 {
+            transform: translateX(-50%)translateY(-50%)rotate(-45deg);
+            -webkit-transform: translateX(-50%)translateY(-50%)rotate(-45deg);
+            -moz-transform: translateX(-50%)translateY(-50%)rotate(-45deg);
+            -ms-transform: translateX(-50%)translateY(-50%)rotate(-45deg);
+            -o-transform: translateX(-50%)translateY(-50%)rotate(-45deg);
+        }
+        
+        .r2 {
+            transform: translateX(-50%)translateY(-50%)rotate(-135deg);
+            -webkit-transform: translateX(-50%)translateY(-50%)rotate(-135deg);
+            -moz-transform: translateX(-50%)translateY(-50%)rotate(-135deg);
+            -ms-transform: translateX(-50%)translateY(-50%)rotate(-135deg);
+            -o-transform: translateX(-50%)translateY(-50%)rotate(-135deg);
+        }
+    }
+
+    .r1,
+    .r2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: rem(22);
+        height: rem(2);
+        background: var(--white);
+        transition: transform 0.3s;
+        transition-delay: 0.4s;
+        -webkit-transition: transform 0.3s;
+        -moz-transition: transform 0.3s;
+        -ms-transition: transform 0.3s;
+        -o-transition: transform 0.3s;
+    }
+
+    .r1 {
+        transform: translateX(-50%)translateY(-50%)rotate(-90deg);
+        -webkit-transform: translateX(-50%)translateY(-50%)rotate(-90deg);
+        -moz-transform: translateX(-50%)translateY(-50%)rotate(-90deg);
+        -ms-transform: translateX(-50%)translateY(-50%)rotate(-90deg);
+        -o-transform: translateX(-50%)translateY(-50%)rotate(-90deg);
+    }
+
+    .r2 {
+        transform: translateX(-50%)translateY(-50%)rotate(-180deg);
+        -webkit-transform: translateX(-50%)translateY(-50%)rotate(-180deg);
+        -moz-transform: translateX(-50%)translateY(-50%)rotate(-180deg);
+        -ms-transform: translateX(-50%)translateY(-50%)rotate(-180deg);
+        -o-transform: translateX(-50%)translateY(-50%)rotate(-180deg);
+    }
+
+    &:active {
+        box-shadow: none;
+    }
+}

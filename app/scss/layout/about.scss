@@ -1,0 +1,41 @@
+@use '../util' as *;
+
+.about {
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+    @include breakpoint(medium){
+        padding-bottom: rem(48);
+    }
+    h2 {
+        margin-bottom: rem(32);
+    }
+    &__wrapper {
+        display: flex;
+        gap: rem(24);
+        flex-direction: column-reverse;
+        @include breakpoint(medium) {
+            flex-direction: row;
+        }
+    }
+
+    &__bio {
+        p {
+            font-size: clamp(1rem, calc(1rem + 0.540vw), 1.4rem);
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @include breakpoint(medium){
+            width: 69%;
+        }
+    }
+
+    &__image {
+        @include breakpoint(medium) {
+            width: 29%;
+        }
+        img {
+            border-radius: 15px;
+        }
+    }
+}
