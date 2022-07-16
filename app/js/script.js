@@ -36,89 +36,43 @@ window.addEventListener("scroll", function() {
 getData();
 
 // Fetch data from project.json
-// function getData() {
-//   fetch("app/json/projects.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data);
+function getData() {
+  fetch("app/json/projects.json")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
 
-//       data.map((element)=> {
-//         return card.innerHTML += `
-//           <article id="${element.id}" class="card">
-//             <div class="card__img">
-//               <figure>
-//                 <img src="${element.img}" alt="${element.imgAlt}">
-//               </figure>
-//             </div>
+      data.map((element)=> {
+        return card.innerHTML += `
+          <article id="${element.id}" class="card">
+            <div class="card__img">
+              <figure>
+                <img src="${element.img}" alt="${element.imgAlt}">
+              </figure>
+            </div>
 
-//             <div class="card__description">
-//               <h3 class="title-line">${element.title}</h3>
-//               <ul>
-//                 ${element.techstack.map((element) => `<li>${element}</li>`).join('')}
-//               </ul>
-//               <p>${element.description}</p>
-//               <div class="btns">
-//                 <a href="${element.url}" target="_blank" rel="noopener noreferrer">Live Site</a>
-//                 ${(()=> {
-//                   if(element.githubUrl !== undefined){
-//                     return `<a href="${element.githubUrl}" target="_blank" rel="noopener noreferrer">Github</a>`
-//                   } else {
-//                     return ""
-//                   }
-//                 })()}
-//               </div>
-//             </div>
-//           </article>
-//         `
-//       });
-//     })
-//     .catch((error) => {
-//       console.error("Error:", error);
-//     });
-// }
-
-// Fetch data from project.json
-async function getData() {
-  // Make a fetch request to get data from project.json
-  const response = await fetch("app/json/projects.json")
-
-  // Check if response was successful or not using the .ok method
-  if (!response.ok) {
-		throw new Error(`${animeQuote.innerHTML = `HTTP error! status: ${response.status}`}`);
-	}
-
-  // Retrieve response as JSON using the json() function
-  const data = await response.json()
-
-  // Iterate through the response using the map function
-  data.map((element)=> {
-    // Use DOM to create new elements
-    return card.innerHTML += `
-      <article id="${element.id}" class="card">
-        <div class="card__img">
-          <figure>
-            <img src="${element.img}" alt="${element.imgAlt}">
-          </figure>
-        </div>
-
-        <div class="card__description">
-          <h3 class="title-line">${element.title}</h3>
-          <ul>
-            ${element.techstack.map((element) => `<li>${element}</li>`).join('')}
-          </ul>
-          <p>${element.description}</p>
-          <div class="btns">
-            <a href="${element.url}" target="_blank" rel="noopener noreferrer">Live Site</a>
-            ${(()=> {
-              if(element.githubUrl !== undefined){
-                return `<a href="${element.githubUrl}" target="_blank" rel="noopener noreferrer">Github</a>`
-              } else {
-                return ""
-              }
-            })()}
-          </div>
-        </div>
-      </article>
-    `
-  });  
+            <div class="card__description">
+              <h3 class="title-line">${element.title}</h3>
+              <ul>
+                ${element.techstack.map((element) => `<li>${element}</li>`).join('')}
+              </ul>
+              <p>${element.description}</p>
+              <div class="btns">
+                <a href="${element.url}" target="_blank" rel="noopener noreferrer">Live Site</a>
+                ${(()=> {
+                  if(element.githubUrl !== undefined){
+                    return `<a href="${element.githubUrl}" target="_blank" rel="noopener noreferrer">Github</a>`
+                  } else {
+                    return ""
+                  }
+                })()}
+              </div>
+            </div>
+          </article>
+        `
+      });
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
