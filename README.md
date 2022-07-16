@@ -13,7 +13,7 @@ This is portfolio site to showcase Jacob's abilities, skills and knowledge in HT
 * Using meta tags and Semantic HTML for SEO purposes.
 
 
-## Screenshots
+## Desktop Screenshots
 
 ![App Screenshot](https://i.ibb.co/1qFv0rB/jacobcodes1.png)
 &nbsp;
@@ -21,7 +21,12 @@ This is portfolio site to showcase Jacob's abilities, skills and knowledge in HT
 ![App Screenshot](https://i.ibb.co/c2Z4G1J/jacobcodes2.png)
 &nbsp;
 &nbsp;
-
+## Mobile Screenshots
+![App Screenshot](https://i.ibb.co/nCNzBdr/mobile1.webp)
+&nbsp;
+![App Screenshot](https://i.ibb.co/fXT3pQk/mobile2.webp)
+&nbsp;
+![App Screenshot](https://i.ibb.co/pw69FXj/mobile3.webp)
 
 ## Tech Stack
 
@@ -35,8 +40,8 @@ This is portfolio site to showcase Jacob's abilities, skills and knowledge in HT
 - [Awesome README](https://github.com/matiassingers/awesome-readme)
 - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 - [Sass, BEM, & Responsive Design](https://www.youtube.com/watch?v=jfMHA8SqUL4)
-- [](https://howtocreateapps.com/fetch-and-display-json-html-javascript/)
-
+- [How to Fetch and Display JSON Data in HTML Using JavaScript](https://howtocreateapps.com/fetch-and-display-json-html-javascript/)
+- [gulp-sass-boilerplate](https://github.com/thecodercoder/generator-gulp-sass-boilerplate)
 ## Feedback
 
 If you have any feedback, please reach out to us at jacobmfune2@gmail.com
