@@ -40,8 +40,9 @@ function getData() {
   fetch("app/json/projects.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
 
+      // Iterate over data using map function and display HTML elements
       data.map((element)=> {
         return card.innerHTML += `
           <article id="${element.id}" class="card">
