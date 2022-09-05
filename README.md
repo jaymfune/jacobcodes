@@ -13,7 +13,7 @@ This is portfolio site to showcase Jacob's abilities, skills and knowledge in HT
 * Using meta tags and Semantic HTML for SEO purposes.
 
 
-## Desktop Screenshots
+## Screenshots
 
 ![App Screenshot](https://i.ibb.co/1qFv0rB/jacobcodes1.png)
 &nbsp;
@@ -21,12 +21,6 @@ This is portfolio site to showcase Jacob's abilities, skills and knowledge in HT
 ![App Screenshot](https://i.ibb.co/c2Z4G1J/jacobcodes2.png)
 &nbsp;
 &nbsp;
-## Mobile Screenshots
-![App Screenshot](https://i.ibb.co/nCNzBdr/mobile1.webp)
-&nbsp;
-![App Screenshot](https://i.ibb.co/fXT3pQk/mobile2.webp)
-&nbsp;
-![App Screenshot](https://i.ibb.co/pw69FXj/mobile3.webp)
 
 ## Tech Stack
 
