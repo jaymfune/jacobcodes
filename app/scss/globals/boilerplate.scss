@@ -30,3 +30,7 @@ li {
 img {
 	max-width: 100%;
 }
+
+::selection {
+	background-color: var(--light-blue);
+}
