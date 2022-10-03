@@ -83,9 +83,15 @@
 					</div>
 
 					<div class="hero__image">
-						<figure>
+						<!-- <figure>
 							<img src="/app/images/man-coding.svg" alt="Illustration of A Man with Laptop coding" width="100%" height="auto">
-						</figure>
+						</figure> -->
+
+						<picture>
+							<source media="(max-width: 799px)" srcset="/app/images/man-coding.svg" />
+							<source media="(min-width: 800px)" srcset="/app/images/man-coding.svg" />
+							<img src="puppy-800w.jpg" alt="Illustration of A Man with Laptop coding" />
+						  </picture>
 					</div>
 				</div>
 			</section>
@@ -113,9 +119,15 @@
 						</div>
 
 						<div class="about__image">
-							<figure>
+							<!-- <figure>
 								<img src="/app/images/portrait.webp" alt="An Image of Jacob Mfune" width="100%" height="auto">
-							</figure>
+							</figure> -->
+
+							<picture>
+								<source media="(max-width: 799px)" srcset="/app/images/portrait.webp" />
+								<source media="(min-width: 800px)" srcset="/app/images/portrait.webp" />
+								<img src="/app/images/portrait.webp" alt="An Image of Jacob Mfune" />
+							  </picture>
 						</div>
 					</div>
 				</div>
