@@ -1,12 +1,43 @@
 [
     {
         "id": 1,
-        "title": "Random Anime Quotes",
-        "img": "/app/images/randomanimequote2.webp",
-        "imgAlt": "App Screenshot",
-        "description" : "This is a random anime quote generator that uses the animechan API to generate the qoute.",
-        "url" : "https://random-animequotes.netlify.app/",
-        "githubUrl" : "https://github.com/jaymfune/random-anime-quotes",
-        "techstack" : ["HTML", "CSS", "JS", "JSON"]
+        "title": "Partnership Cleaning",
+        "img": "/app/images/partnershipcleaning.webp",
+        "imgAlt": "Partnership Cleaning Screenshot",
+        "description": "We designed and developed this website for a cleaning service client with a focus on simplicity, clarity, and ease of navigation. Built with WordPress and Advanced Custom Fields (ACF), the site offers a dynamic and user-friendly backend that allows the client to easily update content, customize colors, and create new sections without touching code.",
+        "url": "https://www.partnershipcleaning.co.uk/",
+        "techstack": [
+            "WordPress",
+            "ACF",
+            "JS",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Adwin Peeks",
+        "img": "/app/images/adwinpeeks.webp",
+        "imgAlt": "Adwin Peeks Screenshot",
+        "description": "Adwin Peeks – Built with WordPress and Advanced Custom Fields (ACF), this dynamic website allows users to fully customize their content. Users can choose and configure different section types, enabling flexible and personalized site creation without touching any code.",
+        "url": "https://adwinpeeks.nl/",
+        "techstack": [
+            "WordPress",
+            "ACF",
+            "JS",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "OkChef",
+        "img": "/app/images/okchef.webp",
+        "imgAlt": "OkChef Screenshot",
+        "description": "Built with the GeneratePress Page Builder, this website combines visual appeal with high performance. We implemented custom CSS and GeneratePress dynamic fields to deliver a fast, responsive user experience. The site is also fully customizable, empowering the client to easily add new pages and make adjustments as needed.",
+        "url": "https://okchef.org/",
+        "techstack": [
+            "WordPress",
+            "GeneratePress",
+            "JS"
+        ]
     }
 ]
